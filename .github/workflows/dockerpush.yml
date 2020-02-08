@@ -18,11 +18,7 @@ jobs:
   # See also https://docs.docker.com/docker-hub/builds/automated-testing/
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        cmd: [ server ]
-    
-      fail-fast: true
+
     steps:
       - uses: actions/checkout@v2
 
@@ -41,6 +37,12 @@ jobs:
     # Ensure test job passes before pushing image.
     needs: test
 
+    strategy:
+      matrix:
+        cmd: [ server ]
+    
+      fail-fast: true
+  
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
 
