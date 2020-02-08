@@ -1,6 +1,8 @@
 集成K8S实践
 ===
 
+![Docker](https://github.com/hnlq715/practice-to-intergrate-k8s/workflows/Docker/badge.svg)
+
 此仓库主要为演示Golang集成K8S实践，提供可复用的编程模板
 
 内容
