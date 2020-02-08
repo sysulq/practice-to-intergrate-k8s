@@ -13,16 +13,16 @@ on:
   # Run tests for any PRs.
   pull_request:
 
-env:
-  # TODO: Change variable to your image's name.
-  IMAGE_NAME: practicek8s
-
 jobs:
   # Run tests.
   # See also https://docs.docker.com/docker-hub/builds/automated-testing/
   test:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        cmd: [ server ]
+    
+      fail-fast: true
     steps:
       - uses: actions/checkout@v2
 
@@ -48,14 +48,14 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build image
-        run: docker build . --file Dockerfile --tag image
+        run: docker build . --file Dockerfile --tag image --build-arg cmd=${{ matrix.cmd }}
 
       - name: Log into registry
         run: echo "${{ secrets.TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
 
       - name: Push image
         run: |
-          IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/$IMAGE_NAME
+          IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/${{ matrix.cmd }}
 
           # Strip git ref prefix from version
           VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
