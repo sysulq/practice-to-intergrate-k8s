@@ -17,8 +17,8 @@ spec:
             "--server_address=0.0.0.0:8080",
             "--broker_address=0.0.0.0:10001"
             ]
-          image: practicek8s:latest
-          imagePullPolicy: IfNotPresent
+          image: docker.pkg.github.com/hnlq715/practice-to-intergrate-k8s/server:latest
+          imagePullPolicy: Always
           ports:
           - containerPort: 8080
             name: server-port

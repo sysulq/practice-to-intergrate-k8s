@@ -9,13 +9,13 @@
 ---
 
 * VSCODE
-  * 安装
-  * 基本操作
+  * 为什么？
   * 常用插件介绍
     * setting sync
     * go
     * docker
     * k8s
+    * power mode
     * ...
   * 常见问题
     * 如何利用工作区

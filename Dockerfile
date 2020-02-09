@@ -1,4 +1,5 @@
 FROM golang:1.13.7-alpine as builder
+LABEL MAINTAINER="hnlq715@qq.com"
 
 ADD . /app
 ARG cmd=server
