@@ -22,11 +22,24 @@
     * 多机器配置同步
     * go mod代理问题
 * Docker
-  * TODO
+  * 为什么？
+  * 常用命令
+  * 常见问题
+    * 对比containerd
+    * 如何最小化Docker镜像
+    * 如何一个Docker打包多个镜像
 * K8S
   * TODO
 * Github
   * TODO
 * Microservice
   * TODO
-  
+
+视频
+
+* [vscode](https://zhuanlan.zhihu.com/p/105953770)
+
+参考资料
+
+* [AliyunContainerService/k8s-for-docker-desktop](https://github.com/AliyunContainerService/k8s-for-docker-desktop)
+* [opsnull/follow-me-install-kubernetes-cluster](https://github.com/opsnull/follow-me-install-kubernetes-cluster)
