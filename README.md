@@ -37,9 +37,9 @@
 
 视频
 
-* [vscode](https://zhuanlan.zhihu.com/p/105953770)
+* [k8s集成实践之vscode](https://zhuanlan.zhihu.com/p/105953770)
 
 参考资料
 
-* [AliyunContainerService/k8s-for-docker-desktop](https://github.com/AliyunContainerService/k8s-for-docker-desktop)
-* [opsnull/follow-me-install-kubernetes-cluster](https://github.com/opsnull/follow-me-install-kubernetes-cluster)
+* 测试环境速成指南 [AliyunContainerService/k8s-for-docker-desktop](https://github.com/AliyunContainerService/k8s-for-docker-desktop)
+* 线上环境速成指南 [opsnull/follow-me-install-kubernetes-cluster](https://github.com/opsnull/follow-me-install-kubernetes-cluster)
