@@ -35,10 +35,6 @@
 * Microservice
   * TODO
 
-视频
-
-* [k8s集成实践之vscode](https://zhuanlan.zhihu.com/p/105953770)
-
 参考资料
 
 * 测试环境速成指南 [AliyunContainerService/k8s-for-docker-desktop](https://github.com/AliyunContainerService/k8s-for-docker-desktop)
