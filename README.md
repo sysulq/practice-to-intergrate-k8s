@@ -3,9 +3,22 @@
 
 ![Docker](https://github.com/hnlq715/practice-to-intergrate-k8s/workflows/Docker/badge.svg)
 
-此仓库主要为演示Golang集成K8S实践，提供可复用的编程模板
+此仓库包含了gRPC/golang/docker/k8s相关内容
 
-内容
+主要为演示Golang集成K8S实践，并提供参考学习的案例
+
+章节
+---
+
+* 第一章：gRPC简介
+* 第二章：gRPC初试身手
+* 第三章：gRPC通信模式
+* 第四章：gRPC底层原理
+* 第五章：gRPC其他
+* 第六章：gRPC线上实践
+* 第七章：gRPC生态
+
+相关知识
 ---
 
 * VSCODE
